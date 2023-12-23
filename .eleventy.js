@@ -1,5 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
 
 const { eleventyImagePlugin } = require("@11ty/eleventy-img");
@@ -42,4 +42,6 @@ module.exports = function(eleventyConfig) {
 			decoding: "async"
 		}
 	});
+
+	eleventyConfig.addPlugin(pluginRss);
 }
