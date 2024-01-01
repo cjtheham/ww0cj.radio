@@ -10,7 +10,7 @@
   <body>
     <header> <!-- readable.css is designed with the putting your header right above the navbar in mind, though different orderings (like navbar above header) will work fine -->
       <h1>{{ title }}</h1> <!-- Ideally, only have one <h1> element per page, and put it here. -->
-      <p>by {{ metadata.author.name }} on {{ date }}</p> <!-- If you have a subtitle, put it in a <p> element right below the <h1> in the <header> -->
+      <p>by {{ metadata.author.name }} on {{ date.toUTCString() }}</p> <!-- If you have a subtitle, put it in a <p> element right below the <h1> in the <header> -->
     </header>
 			<nav>
 				{%- for entry in collections.all | eleventyNavigation %}
