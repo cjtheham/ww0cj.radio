@@ -1,6 +1,6 @@
 ---
 title: Learning LaTex - The Bylaws Class
-date: 2023-12-17
+date: 2024-01-07
 tags: notes
 draft: false
 ---
