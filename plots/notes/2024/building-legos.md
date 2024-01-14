@@ -2,7 +2,7 @@
 title: Building LEGOs Again
 date: 2024-01-14
 tags: notes, 100-days-to-offload, lego
-draft: true
+draft: false
 ---
 
 My university's winter break is beginning to wrap up, and I ended up back in town a few
