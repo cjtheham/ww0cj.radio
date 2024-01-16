@@ -1,7 +1,7 @@
 ---
 title: 2024 Resolutions
 date: 2024-01-01
-tags: notes, 100-days-to-offload
+tags: ['100 Days to Offload', 'Mental Health']
 ---
 
 2023 was a strange year for me, and I usually dislike the "new year, new me" attitude. From my anecdotal evidence, it seems to lead to a higher chance of burnout and disappointment as people pile too high of expectations on themselves for a perfect year. However, I think a new year and a fresh start may be just what I need to succeed, so I'm sharing my goals not only for accountability but also to show a commitment to this fresh start and an excitement as we start the new year.

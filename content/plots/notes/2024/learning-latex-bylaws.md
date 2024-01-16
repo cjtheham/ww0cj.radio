@@ -1,7 +1,7 @@
 ---
 title: Learning LaTex - The Bylaws Class
 date: 2024-01-07
-tags: notes, 100-days-to-offload
+tags: ['100 Days to Offload', 'LaTeX']
 draft: false
 ---
 

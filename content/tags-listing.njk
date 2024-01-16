@@ -1,0 +1,15 @@
+---
+permalink: /tags/
+layout: layouts/base.njk
+---
+<h1>Tags</h1>
+
+<ul>
+{% for tag in collections.all | getAllTags | filterTagList %}
+  {# TODO: automate this #}
+	{% if tag != "notes" and tag != "resources" %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	  <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

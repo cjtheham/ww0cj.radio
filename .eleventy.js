@@ -17,7 +17,18 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('MMM yyyy');
   });
 
+	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+	});
 	
+	eleventyConfig.addFilter("getAllTags", collection => {
+		let tagSet = new Set();
+		for(let item of collection) {
+			(item.data.tags || []).forEach(tag => tagSet.add(tag));
+		}
+		return Array.from(tagSet);
+	});
+
 	// WebC
 	eleventyConfig.addPlugin(eleventyWebcPlugin, {
 		components: [

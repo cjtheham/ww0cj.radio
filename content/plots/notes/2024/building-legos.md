@@ -1,7 +1,7 @@
 ---
 title: Building LEGOs Again
 date: 2024-01-14
-tags: notes, 100-days-to-offload, lego
+tags: ['100 Days to Offload', 'LEGO']
 draft: false
 ---
 
