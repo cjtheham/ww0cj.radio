@@ -4,5 +4,5 @@
 
 <header>
   <h1>{{ title }}</h1>
-  <p>{{ subtitle }}</p>
+  <p>{{ subtitle }}{% if lastModified %}<span title="Last edited {{ lastModified.toUTCString() }}">*</span>{% endif %}</p>
 </header>
