@@ -75,4 +75,13 @@ module.exports = function(eleventyConfig) {
 			process.env.BUILD_DRAFTS = true;
 		}
 	});
+
+	return {
+		dir: {
+			input: "content",          // default: "."
+			includes: "../_includes",  // default: "_includes"
+			data: "../_data",          // default: "_data"
+			output: "_site"
+		},
+	}
 }
