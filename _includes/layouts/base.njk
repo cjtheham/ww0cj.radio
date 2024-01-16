@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"> <!-- This makes sure all your characters show up properly. -->
-    <link rel="stylesheet" type="text/css" href="/css/readable.min.css"> <!-- Important! Forgetting this means nothing from readable.css will apply. :) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This ensures your site looks right on mobile devices -->
-    <!-- Insert other generic meta tags here -->
-    <title>{{ title }}</title> <!-- This sets the text that goes in the tab -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/readable.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{{ title }}</title>
   </head>
   <body>
-    <header> <!-- readable.css is designed with the putting your header right above the navbar in mind, though different orderings (like navbar above header) will work fine -->
-      <h1>{{ metadata.title }}</h1> <!-- Ideally, only have one <h1> element per page, and put it here. -->
-      <p>{{ subtitle }}</p> <!-- If you have a subtitle, put it in a <p> element right below the <h1> in the <header> -->
-    </header>
-			<nav>
-				{%- for entry in collections.all | eleventyNavigation %}
-          <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-				{%- endfor %}
-			</nav>
-    <main> <!-- All your main content goes in here -->
+    {% include "partials/header.njk" %}
+		{% include "partials/navigation.njk" %}
+    <main>
         {{ content | safe }}
     </main>
-    <footer> <!-- Some nice extra information at the bottom of the page -->
-      <p><a href="/policies/privacy/">Privacy Policy</a> | <a href="/policies/cookies/">Cookie Policy</a> | <a href="/policies/terms/">Terms of Use</a></p> <!-- We like putting links in a paragraph separated by pipe ("|") characters -->
-      <p>©2024 {{ metadata.author.name }}; usable under CC BY-SA 4.0</p> <!-- While not legally required, it's nice to put copyright and/or license info here. Also, it looks nice to break up the links with a line of text -->
-      <p><a href="/subscribe/">Subscribe</a> | <a href="https://fosstodon.org/@freedomtowrite" rel="me" target="blank">Mastodon</a> | <a href="/contact/">Contact Me</a></p> <!-- This is the kind of thing people look for in footers: contact info and legal info. Make sure you include both! -->
-    </footer>
-
-    <script src="https://tinylytics.app/embed/Xj-piZ6JgXdXz91XmBb8.js" defer></script>
+    {% include "partials/footer.njk" %}
   </body>
 </html>

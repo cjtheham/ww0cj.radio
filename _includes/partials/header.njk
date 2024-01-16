@@ -1,0 +1,8 @@
+{% if metadata.author.name and date %}
+  {% set subtitle = "by " +  metadata.author.name + " on " + date.toUTCString() %}
+{% endif %}
+
+<header>
+  <h1>{{ title }}</h1>
+  <p>{{ subtitle }}</p>
+</header>

@@ -6,6 +6,7 @@ module.exports = {
 	author: {
 		name: "WW0CJ",
 		email: "webmaster@ww0cj.radio",
-		url: "https://ww0cj.radio/"
+		url: "https://ww0cj.radio/",
+		fediverse: "https://alpha.polymaths.social/@roguefoam"
 	}
 }
