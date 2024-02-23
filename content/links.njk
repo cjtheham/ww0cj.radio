@@ -5,7 +5,11 @@ eleventyNavigation:
   key: Links
 ---
 
+
 {% for link in links %}
 <a href="{{ link.link }}"><h3> {{ link.title }}</h3></a>
 <p>{{ link.description }}</p>
+{% if not loop.last %}
+<hr>
+{% endif %}
 {% endfor %}
