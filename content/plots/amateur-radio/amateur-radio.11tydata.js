@@ -1,6 +1,7 @@
 module.exports = {
 	tags: [
-		"Amateur Radio"
+		"Amateur Radio",
+		"post"
 	],
 	"layout": "layouts/post.njk",
 };
