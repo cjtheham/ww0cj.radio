@@ -1,6 +1,7 @@
 module.exports = {
 	tags: [
-		"resources"
+		"resources",
+		"post"
 	],
 	"layout": "layouts/post.njk",
 };
