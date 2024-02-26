@@ -29,5 +29,5 @@ Check out my other web presences below.
 
 
 <h2>Some Recent Posts</h2>
-{% set postslist = collections.all  %}
+{% set postslist = collections.post | head(-5) %}
 {% include "postslist.njk" %}
