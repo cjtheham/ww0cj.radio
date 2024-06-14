@@ -29,6 +29,10 @@ module.exports = function(eleventyConfig) {
 		return Array.from(tagSet);
 	});
 
+	eleventyConfig.addFilter("filterDrafts", function(posts) {
+    return posts.filter(post => !post.data.draft);
+  });
+	
 	// WebC
 	eleventyConfig.addPlugin(eleventyWebcPlugin, {
 		components: [
