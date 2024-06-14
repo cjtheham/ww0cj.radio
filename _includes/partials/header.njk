@@ -3,6 +3,6 @@
 {% endif %}
 
 <header>
-  <h1>{{ title }}</h1>
+    <h1>{% if not tags or "post" not in tags or title == "blog" %}WW0CJ | {% endif %}{{ title }}</h1>
   <p>{{ subtitle }}{% if lastModified %}<span title="Last edited {{ lastModified.toUTCString() }}">*</span>{% endif %}</p>
 </header>
