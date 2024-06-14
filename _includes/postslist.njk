@@ -1,5 +1,5 @@
 {% for post in postslist | reverse %}
-{% if post.data.title != "blog" %}
+{% if post.data.title != "blog" and post.data.title != "amateur radio" %}
 <span><i>{{ post.date | moYear }}</i> <a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %} {% if post.data.draft %}<span style="color: red">(D)</span>{% endif %}</a></span><br>
 {% endif %}
 {% endfor %}
