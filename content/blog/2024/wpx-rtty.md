@@ -1,7 +1,7 @@
 ---
 title: CQ WPX RTTY 2024
 date: 2024-02-23
-tags: ['100 Days to Offload']
+tags: ['Amateur Radio', '100 Days to Offload']
 ---
 
 From February 10<sup>th</sup>-11<sup>th</sup> (UTC Time) 2024, I had the awesome opportunity to participate in the CQ WPX RTTY contest operating with the WV4P team.

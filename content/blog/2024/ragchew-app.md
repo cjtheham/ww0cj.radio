@@ -1,7 +1,7 @@
 ---
 title: Ragchew.app is awesome
 date: 2024-02-25
-tags: ['100 Days to Offload']
+tags: ['Amateur Radio', '100 Days to Offload']
 ---
 
 A few weeks ago, while checking into the [Tulsa Amateur Radio Club](https://w5ias.com) weekly net, I heard someone get on and shoutout their app for watching the net progress. I decided to check it out and I was so impressed by what I saw that I met with the developer and wanted to write about it a bit!

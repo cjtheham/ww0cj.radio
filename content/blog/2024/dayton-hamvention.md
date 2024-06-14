@@ -1,7 +1,7 @@
 ---
 title: Dayton Hamvention 2024
 date: 2024-05-27
-tags: ['Hamfests']
+tags: ['Amateur Radio', 'Hamfests']
 ---
 
 Last week, I got to attend the [Dayton Hamvention](https://hamvention.org/) hamfest in Xenia, Ohio! Hamvention is one of the largest hamfests in the world in terms of attendance numbers, and is filled to the brim with opportunities for learning more about the amateur radio hobby as well as seeing what new innovations are coming out from independent hobbiests as well as major vendors.
