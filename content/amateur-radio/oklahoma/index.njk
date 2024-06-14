@@ -1,0 +1,56 @@
+---
+layout: layouts/plot.njk
+title: WW0CJ
+subtitle: oklahoma amateur radio
+eleventyExcludeFromCollections: true
+---
+
+<h2>repeaters</h2>
+
+<table>
+  <tr>
+    <th>Frequency</th>
+    <th>Offset</th>
+    <th>Tone</th>
+    <th>Location</th>
+    <th>Callsign</th>
+    <th>Notes</th>
+  </tr>
+{% for repeater in repeaters | sort(attribute='frequency') %}
+    <tr>
+      <td>{{ repeater.frequency.toFixed(3) }}</td>
+      <td>{{ repeater.offset }}</td>
+      <td>{{ repeater.tone }}{% if repeater.rx_tone %}*{% endif %}</td>
+      <td>{{ repeater.location }}</td>
+      <td>{{ repeater.callsign }}</td>
+      <td>{{ repeater.description }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+<h2>nets</h2>
+
+{% for net in nets %}
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Time</th>
+    <th>Frequency</th>
+    <th>Offset</th>
+      <th>Tone</th>
+      <th>Location</th>
+      <th>Callsign</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>{{ net.day }}</td>
+      <td>{{ net.time }}</td>
+      <td>{{ net.frequency.toFixed(3) }}</td>
+      <td>{{ net.offset }}</td>
+      <td>{{ net.tone }}{% if net.rx_tone %}*{% endif %}</td>
+      <td>{{ net.location }}</td>
+      <td>{{ net.callsign }}</td>
+      <td>{{ net.description }}</td>
+    </tr>
+</table>
+{% endfor %}
