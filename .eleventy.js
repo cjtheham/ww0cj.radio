@@ -1,5 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
 
 const { eleventyImagePlugin } = require("@11ty/eleventy-img");
@@ -58,8 +58,6 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addPlugin(pluginRss);
-
 	// When `permalink` is false, the file is not written to disk
 	eleventyConfig.addGlobalData("eleventyComputed.permalink", function() {
 		return (data) => {
@@ -102,6 +100,25 @@ module.exports = function(eleventyConfig) {
 
 		return array.slice(0, n);
 	});
+
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom",
+		outputPath: "/feed",
+		collection: {
+			name: "posts",
+			limit: 0
+		},
+		metadata: {
+			language: "en",
+			title: "WW0CJ",
+			subtitle: "Amateur radio and hobby blog.",
+			base: "https://ww0cj.radio",
+			author: {
+				name: "WW0CJ",
+				email: "webmaster@ww0cj.radio",
+			},
+		}
+	})
 
 	return {
 		dir: {
