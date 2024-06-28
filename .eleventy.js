@@ -42,6 +42,26 @@ module.exports = function(eleventyConfig) {
 		]
 	});
 
+
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom",
+		outputPath: "/feed.xml",
+		collection: {
+			name: "post",
+			limit: 10
+		},
+		metadata: {
+			language: "en",
+			title: "WW0CJ",
+			subtitle: "Amateur radio and hobby blog.",
+			base: "https://ww0cj.radio",
+			author: {
+				name: "WW0CJ",
+				email: "webmaster@ww0cj.radio",
+			},
+		}
+	});
+
 	// Image plugin
 	eleventyConfig.addPlugin(eleventyImagePlugin, {
 		// Set global default options
@@ -101,24 +121,6 @@ module.exports = function(eleventyConfig) {
 		return array.slice(0, n);
 	});
 
-	eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom",
-		outputPath: "/feed",
-		collection: {
-			name: "posts",
-			limit: 0
-		},
-		metadata: {
-			language: "en",
-			title: "WW0CJ",
-			subtitle: "Amateur radio and hobby blog.",
-			base: "https://ww0cj.radio",
-			author: {
-				name: "WW0CJ",
-				email: "webmaster@ww0cj.radio",
-			},
-		}
-	})
 
 	return {
 		dir: {
