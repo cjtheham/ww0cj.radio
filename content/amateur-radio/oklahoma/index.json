@@ -1,0 +1,41 @@
+{
+  "repeaters": [
+    {
+      "frequency": 443.850,
+      "offset": "+5.0",
+      "tone": 88.5,
+      "rx_tone": false,
+      "callsign": "W5IAS",
+      "location": "Tulsa, OK",
+      "description": "Tulsa Amateur Radio Club - W5IAS Superlink Hub"
+    },
+    {
+      "frequency": 444.725,
+      "offset": "+5.0",
+      "tone": 88.5,
+      "rx_tone": true,
+      "callsign": "WA5LVT",
+      "location": "Skiatook, OK",
+      "description": "Tulsa Repeater Org. Repeater"
+    }
+  ],
+  "nets": [
+    {
+      "title": "Tulsa Area ARES Net",
+      "description": "Tulsa Area ARES Net",
+      "day": "Thursday",
+      "time": "8:00 PM",
+      "frequency": 443.850,
+      "offset": "+5.0",
+      "tone": 88.5,
+      "rx_tone": false
+    }
+  ],
+  "clubs": [
+    {
+      "name": "Tulsa Amateur Radio Club",
+      "callsign": "W5IAS", 
+      "website": "http://www.w5ias.com"
+    }
+  ]
+}
