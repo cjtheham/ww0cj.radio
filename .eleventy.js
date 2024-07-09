@@ -45,7 +45,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom",
-		outputPath: "/feed.xml",
+		outputPath: "/feed",
 		collection: {
 			name: "post",
 			limit: 10
