@@ -2,6 +2,7 @@
 title: Joining Blaugust
 date: 2024-08-04
 tags: ['Blaugust 2024', 'Meta'] 
+draft: true
 ---
 
 I always love these blogging challenges that come up every year, but my schedule
