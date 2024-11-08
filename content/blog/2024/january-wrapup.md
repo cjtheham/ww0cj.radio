@@ -2,6 +2,7 @@
 title: January 2024 Roundup
 date: 2024-02-01
 tags: ['100 Days to Offload', 'Periodical']
+draft: true
 ---
 
 I'm a bit behind on 100 Days to Offload this year already, so I thought I'd take a page out of some of my favorite blogs to read (specifically [JoelChrono](https://joelchrono.xyz/blog/december-2023-summary/) and [hyde](https://lazybear.io/)) in drafting up a summary of my month and the kinds of content I consumed.

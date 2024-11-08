@@ -2,6 +2,7 @@
 title: April 2024 Wrapup
 date: 2024-05-04
 tags: ['100 Days to Offload', 'Periodical']
+draft: true
 ---
 
 Compared to last month, I'm actually doing a pretty good job at getting this post out in a timely manner - although I'm still a few days late. Also as per usual, it's been a crazy month for me in my personal life so not a ton worth writing about in a single blog post happened, but hopefully I can make some better posts down the line as well!

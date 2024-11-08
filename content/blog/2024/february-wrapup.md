@@ -2,6 +2,7 @@
 title: February 2024 Roundup
 date: 2024-03-04
 tags: ['100 Days to Offload', 'Periodical']
+draft: true
 ---
 
 I'm a few days late, and it's been a crazy month. Between classes, sickness, and just general life it's been hard to keep up. Nevertheless, I got some cool stuff done this month! I participated in the [CQ WPX RTTY](/plots/amateur-radio/2024/wpx-rtty/) contest, hosted a major on-campus event to promote the local radio club, started a new Dungeons & Dragons campaign, and somehow managed to not fall behind on life in all of that.
