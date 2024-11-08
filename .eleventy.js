@@ -62,6 +62,8 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
+
 	// Image plugin
 	eleventyConfig.addPlugin(eleventyImagePlugin, {
 		// Set global default options
