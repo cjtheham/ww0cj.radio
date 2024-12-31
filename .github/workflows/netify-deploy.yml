@@ -2,7 +2,7 @@ name: Netlify Scheduled Deployment
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # This runs every 24 hours at midnight UTC
+    - cron: '0 12 */1 * *' # This runs every 24 hours at midnight UTC
   workflow_dispatch: # Allows manual triggering of the action from GitHub Actions
 
 jobs:
